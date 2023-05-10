@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCss.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="pont.webp"alt="bannière de mon site" width="800" height="200">
+        <h1>Bienvenu sur mon site web !</h1>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/LeylaJS/Desktop/tp-site-internet/index.html">Accueil</a></li>
+                <li><a href="#article1">Blog</a></li>
+                <li><a href="#Gallerie">Gallerie</a></li>
+                <li><a href="file:///C:/Users/LeylaJS/Desktop/tp-site-internet/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <fieldset>
+            <legend>Formulaire</legend>
+            <div>
+            <form method="post" action="page.php">
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" id="nom" required placeholder="Ex:Robert" minlength="2" maxlength="20" >
+                <span>*</span>
+            </form>
+            <div>
+                <form method="post" action="page.php">
+                <label for="email">E-mail</label>
+                <input type="email" name="mail" id="mail" required placeholder="Ex:monMail@FAI.com">
+                <span>*</span> 
+                </form>
+            <div>
+                <form method="post" action="page.php">
+                <label for="commentaire">Laissez un commentaire</label>
+                <br>
+                <textarea id="commentaire" name="commentaire" rows="10" cols="70" required placeholder="Je dépose mon avis" ></textarea>
+                </form>
+            </div>
+            <div>
+                <form method="post" action="page.php">
+                <label for="envoie">Envoyer une copie par E-mail</label>
+                <input type="checkbox" id="checkbox" name="checkbox" checked> 
+                </form>
+                <form method="post" action="page.php">
+                <input type="submit" value="envoyer">
+                <input type="reset" value="reset">
+            </form>
+            </div>
+        </fieldset>
+    </section>
+</body>
+<footer>
+    <ul>
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+        <li><a href="#">Menu 4</a></li>
+    </ul>
+</footer>
+</html>
